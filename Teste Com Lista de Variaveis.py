@@ -1,4 +1,3 @@
-  
 grupo = ["Pedro", "Kaiki", "Vitor","Atila"]
 print(grupo)
 SN=(input("Deseja adicionar participante? "))
@@ -13,7 +12,8 @@ while SN == "sim":
     SN=(input("Deseja adicionar participante? "))
 
     if SN == "nao" or SN == "não":
-        
-        print(f'Seu Grupo é composto por: {grupo}')
+        print('Seu Grupo é composto por:')
+        for pessoa in grupo:
+            print(pessoa)
 
         break
